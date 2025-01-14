@@ -122,6 +122,7 @@ def find_similar_models(query_file_path, descriptors_from_db, thumbnails_directo
     similarity_scores.sort(key=lambda x: x[1], reverse=True)
     return similarity_scores[:top_k]
 
+#defining the routes
 @app.route('/', methods=['GET', 'POST'])
 def upload_file():
     if request.method == 'POST':
