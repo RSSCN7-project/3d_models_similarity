@@ -17,7 +17,7 @@ app.config['UPLOAD_FOLDER'] = 'uploads'
 if not os.path.exists(app.config['UPLOAD_FOLDER']):
     os.makedirs(app.config['UPLOAD_FOLDER'])
 
-# Define the new assets path
+
 STATIC_FOLDER = "static/thumbnails"
 app.config['STATIC_FOLDER'] = STATIC_FOLDER
 
